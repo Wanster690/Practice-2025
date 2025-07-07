@@ -4,7 +4,47 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="561e1ac1-677e-4985-bdf9-9314cb8823a1" name="Changes" comment="" />
+    <list default="true" id="561e1ac1-677e-4985-bdf9-9314cb8823a1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Server/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Server/controllers/brandController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Server/controllers/deviceController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Server/controllers/typeController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Server/routes/brandRouter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Server/routes/deviceRouter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Server/routes/typeRouter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/pages/Admin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/pages/Auth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/pages/Basket.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/pages/DevicePage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/pages/Shop.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/routes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/store/DeviceStore.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/store/UserStore.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/utils/consts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/basketController.js" beforeDir="false" afterPath="$PROJECT_DIR$/Server/controllers/basketController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/brandController.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/deviceController.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/orderController.js" beforeDir="false" afterPath="$PROJECT_DIR$/Server/controllers/orderController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/statusController.js" beforeDir="false" afterPath="$PROJECT_DIR$/Server/controllers/statusController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/typeController.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/userController.js" beforeDir="false" afterPath="$PROJECT_DIR$/Server/controllers/userController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.js" beforeDir="false" afterPath="$PROJECT_DIR$/Server/db.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/error/ApiError.js" beforeDir="false" afterPath="$PROJECT_DIR$/Server/error/ApiError.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/Server/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middleware/ErrorHandlingMiddleware.js" beforeDir="false" afterPath="$PROJECT_DIR$/Server/middleware/ErrorHandlingMiddleware.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/models.js" beforeDir="false" afterPath="$PROJECT_DIR$/Server/models/models.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Server/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Server/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/basketRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/Server/routes/basketRouter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/brandRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/Server/middleware/authMiddleware.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/deviceRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/Server/middleware/checkRoleMiddleware.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/Server/routes/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/orderRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/Server/routes/orderRouter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/statusRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/Server/routes/statusRouter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/typeRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/AppRouter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/userRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/Server/routes/userRouter.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,6 +62,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="SHOW_RECENT_BRANCHES" value="false" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -36,23 +79,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Node.js.index.js.executor": "Run",
-    "Node.js.models.js.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "D:/Study/3K/3.2/Practice/Practice",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "D:\\Programs\\WebStorm 2023.3.4\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Node.js.index.js.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.models.js.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Study/3K/3.2/Practice/Practice&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;D:\\Programs\\WebStorm 2023.3.4\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Study\3K\3.2\Practice\Project\Server" />
+      <recent name="D:\Study\3K\3.2\Practice\Project" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -67,7 +116,12 @@
       <workItem from="1751556641763" duration="195000" />
       <workItem from="1751557031612" duration="55000" />
       <workItem from="1751557140507" duration="3281000" />
-      <workItem from="1751625881184" duration="2033000" />
+      <workItem from="1751625881184" duration="2316000" />
+      <workItem from="1751815658546" duration="65000" />
+      <workItem from="1751815731737" duration="599000" />
+      <workItem from="1751816342812" duration="4047000" />
+      <workItem from="1751836792418" duration="854000" />
+      <workItem from="1751837659297" duration="9646000" />
     </task>
     <servers />
   </component>

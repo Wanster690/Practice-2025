@@ -4,46 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="561e1ac1-677e-4985-bdf9-9314cb8823a1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Server/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Server/controllers/brandController.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Server/controllers/deviceController.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Server/controllers/typeController.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Server/routes/brandRouter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Server/routes/deviceRouter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Server/routes/typeRouter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/pages/Admin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/pages/Auth.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/pages/Basket.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/pages/DevicePage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/pages/Shop.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/routes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/store/DeviceStore.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/store/UserStore.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/utils/consts.js" afterDir="false" />
+    <list default="true" id="561e1ac1-677e-4985-bdf9-9314cb8823a1" name="Changes" comment="Basic backend is Done,&#10;starting frontend">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/basketController.js" beforeDir="false" afterPath="$PROJECT_DIR$/Server/controllers/basketController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/brandController.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/deviceController.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/orderController.js" beforeDir="false" afterPath="$PROJECT_DIR$/Server/controllers/orderController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/statusController.js" beforeDir="false" afterPath="$PROJECT_DIR$/Server/controllers/statusController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/typeController.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/userController.js" beforeDir="false" afterPath="$PROJECT_DIR$/Server/controllers/userController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.js" beforeDir="false" afterPath="$PROJECT_DIR$/Server/db.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/error/ApiError.js" beforeDir="false" afterPath="$PROJECT_DIR$/Server/error/ApiError.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/Server/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middleware/ErrorHandlingMiddleware.js" beforeDir="false" afterPath="$PROJECT_DIR$/Server/middleware/ErrorHandlingMiddleware.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/models.js" beforeDir="false" afterPath="$PROJECT_DIR$/Server/models/models.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Server/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Server/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/basketRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/Server/routes/basketRouter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/brandRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/Server/middleware/authMiddleware.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/deviceRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/Server/middleware/checkRoleMiddleware.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/Server/routes/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/orderRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/Server/routes/orderRouter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/statusRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/Server/routes/statusRouter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/typeRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/AppRouter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/userRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/Server/routes/userRouter.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,8 +83,17 @@
       <workItem from="1751815731737" duration="599000" />
       <workItem from="1751816342812" duration="4047000" />
       <workItem from="1751836792418" duration="854000" />
-      <workItem from="1751837659297" duration="9646000" />
+      <workItem from="1751837659297" duration="10493000" />
     </task>
+    <task id="LOCAL-00001" summary="Basic backend is Done,&#10;starting frontend">
+      <option name="closed" value="true" />
+      <created>1751847404812</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1751847404812</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -162,5 +133,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Basic backend is Done,&#10;starting frontend" />
+    <option name="LAST_COMMIT_MESSAGE" value="Basic backend is Done,&#10;starting frontend" />
   </component>
 </project>

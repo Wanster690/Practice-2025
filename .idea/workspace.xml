@@ -5,53 +5,39 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="561e1ac1-677e-4985-bdf9-9314cb8823a1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/client/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/BrandBar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/DeviceItem.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/DeviceList.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/NavBar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/Pages.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/TypeBar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/modals/ModalBrand.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/modals/ModalDevice.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/modals/ModalType.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/http/deviceAPI.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/http/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/http/userAPI.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/styles/App.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/styles/components/BrandBar.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/styles/components/DeviceItem.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/styles/components/DeviceList.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/styles/components/NavBar.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/styles/components/Pages.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/styles/components/TypeBar.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/styles/components/modals/ModalBrand.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/styles/components/modals/ModalDevice.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/styles/components/modals/ModalType.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/styles/pages/Admin.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/styles/pages/Auth.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/styles/pages/DevicePage.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/styles/pages/Shop.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/controllers/brandController.js" beforeDir="false" afterPath="$PROJECT_DIR$/Server/controllers/brandController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Server/controllers/deviceController.js" beforeDir="false" afterPath="$PROJECT_DIR$/Server/controllers/deviceController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/controllers/typeController.js" beforeDir="false" afterPath="$PROJECT_DIR$/Server/controllers/typeController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/controllers/userController.js" beforeDir="false" afterPath="$PROJECT_DIR$/Server/controllers/userController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/Server/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/routes/brandRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/Server/routes/brandRouter.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Server/routes/deviceRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/Server/routes/deviceRouter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/routes/typeRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/Server/routes/typeRouter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/AppRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/AppRouter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/BrandBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/BrandBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/DeviceItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/DeviceItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/NavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/NavBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Pages.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Pages.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/TypeBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/TypeBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/modals/ModalBrand.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/modals/ModalBrand.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/modals/ModalDevice.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/modals/ModalDevice.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/modals/ModalType.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/modals/ModalType.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/http/deviceAPI.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/http/deviceAPI.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/pages/Admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Admin.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/pages/Auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Auth.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/pages/DevicePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/DevicePage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/pages/Shop.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Shop.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/routes.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/store/DeviceStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/store/DeviceStore.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/styles/App.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/styles/App.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/styles/components/BrandBar.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/styles/components/BrandBar.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/styles/components/DeviceItem.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/styles/components/DeviceItem.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/styles/components/NavBar.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/styles/components/NavBar.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/styles/components/Pages.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/styles/components/Pages.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/styles/components/TypeBar.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/styles/components/TypeBar.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/styles/components/modals/ModalBrand.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/styles/components/modals/ModalBrand.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/styles/components/modals/ModalDevice.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/styles/components/modals/ModalDevice.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/styles/components/modals/ModalType.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/styles/components/modals/ModalType.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/styles/pages/Admin.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/styles/pages/Admin.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/styles/pages/Auth.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/styles/pages/Auth.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/styles/pages/DevicePage.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/styles/pages/DevicePage.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/styles/pages/Shop.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/styles/pages/Shop.module.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,7 +128,7 @@
       <workItem from="1752317245872" duration="6467000" />
       <workItem from="1752415414642" duration="3798000" />
       <workItem from="1752486316983" duration="13169000" />
-      <workItem from="1752501678150" duration="3478000" />
+      <workItem from="1752501678150" duration="14936000" />
     </task>
     <task id="LOCAL-00001" summary="Basic backend is Done,&#10;starting frontend">
       <option name="closed" value="true" />

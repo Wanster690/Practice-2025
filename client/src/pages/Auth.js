@@ -1,17 +1,17 @@
-import React, {useContext, useState} from 'react';
-import {Container, Form} from "react-bootstrap";
+import React, { useContext, useState } from 'react';
+import { Container, Form } from "react-bootstrap";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import Row from "react-bootstrap/Row";
-import {NavLink, useLocation, useNavigate} from "react-router-dom";
-import {LOGIN_ROUTE, REGISTRATION_ROUTE, SHOP_ROUTE} from "../utils/consts";
-import {login, registration} from "../http/userAPI";
-import {observer} from "mobx-react-lite";
-import {Context} from "../index";
+import { NavLink, useLocation, useNavigate } from "react-router-dom";
+import { LOGIN_ROUTE, REGISTRATION_ROUTE, SHOP_ROUTE } from "../utils/consts";
+import { login, registration } from "../http/userAPI";
+import { observer } from "mobx-react-lite";
+import { Context } from "../index";
 import styles from '../styles/pages/Auth.module.css';
 
 const Auth = observer(() => {
-    const {user} = useContext(Context);
+    const { user } = useContext(Context);
     const location = useLocation();
     const navigate = useNavigate();
 
@@ -38,8 +38,8 @@ const Auth = observer(() => {
     return (
         <Container className={styles.container}>
             <Card className={styles.card}>
-                <h2 className={styles.title}>{isLogin ? "Авторизация" : "Регистрация"}</h2>
-                <Form className="d-flex flex-column">
+                <h2 className={styles.title}>{isLogin ? "Вход в аккаунт" : "Регистрация"}</h2>
+                <Form className={styles.form}>
                     <Form.Control
                         className={styles.formControl}
                         placeholder="Введите ваш email..."
@@ -55,16 +55,16 @@ const Auth = observer(() => {
                     />
                     <Row className={styles.row}>
                         {isLogin ?
-                            <div>
+                            <div className={styles.linkText}>
                                 Нет аккаунта? <NavLink to={REGISTRATION_ROUTE}>Зарегистрироваться!</NavLink>
                             </div>
                             :
-                            <div>
+                            <div className={styles.linkText}>
                                 Есть аккаунт? <NavLink to={LOGIN_ROUTE}>Войти!</NavLink>
                             </div>
                         }
                         <Button
-                            variant={"outline-success"}
+                            className={styles.authButton}
                             onClick={click}
                         >
                             {isLogin ? 'Войти' : 'Регистрация'}

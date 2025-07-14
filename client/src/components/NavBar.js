@@ -1,13 +1,9 @@
 import React, { useContext } from 'react';
 import { Context } from "../index";
-import Navbar from "react-bootstrap/Navbar";
-import Nav from "react-bootstrap/Nav";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from 'react-router-dom';
 import { ADMIN_ROUTE, LOGIN_ROUTE, SHOP_ROUTE } from "../utils/consts";
-import { Button } from "react-bootstrap";
 import { observer } from "mobx-react-lite";
-import Container from "react-bootstrap/Container";
-import { useNavigate } from 'react-router-dom';
+import { FaUserShield, FaSignOutAlt, FaSignInAlt } from 'react-icons/fa';
 import styles from '../styles/components/NavBar.module.css';
 
 const NavBar = observer(() => {
@@ -21,42 +17,40 @@ const NavBar = observer(() => {
     };
 
     return (
-        <Navbar bg="dark" variant="dark">
-            <Container>
-                <NavLink
-                    className={styles.navbarLink}
-                    to={SHOP_ROUTE}
-                >
-                    WansteStore
-                </NavLink>
+        <nav className={styles.navbar}>
+            <NavLink to={SHOP_ROUTE} className={styles.logo}>
+                Wanste<span>Store</span>
+            </NavLink>
+
+            <div className={styles.controls}>
                 {user.isAuth ? (
-                    <Nav className={styles.navbarNav}>
-                        <Button
-                            variant={"outline-light"}
+                    <>
+                        <button
+                            className={styles.navButton}
                             onClick={() => navigate(ADMIN_ROUTE)}
                         >
-                            Админ панель
-                        </Button>
-                        <Button
-                            variant={"outline-light"}
+                            <FaUserShield className={styles.icon} />
+                            Админ
+                        </button>
+                        <button
+                            className={styles.navButton}
                             onClick={logOut}
-                            className={styles.navbarButton}
                         >
+                            <FaSignOutAlt className={styles.icon} />
                             Выйти
-                        </Button>
-                    </Nav>
+                        </button>
+                    </>
                 ) : (
-                    <Nav className={styles.navbarNav}>
-                        <Button
-                            variant={"outline-light"}
-                            onClick={() => navigate(LOGIN_ROUTE)}
-                        >
-                            Авторизация
-                        </Button>
-                    </Nav>
+                    <button
+                        className={styles.navButton}
+                        onClick={() => navigate(LOGIN_ROUTE)}
+                    >
+                        <FaSignInAlt className={styles.icon} />
+                        Авторизация
+                    </button>
                 )}
-            </Container>
-        </Navbar>
+            </div>
+        </nav>
     );
 });
 

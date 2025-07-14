@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react';
-import { Button, Dropdown, Form, Modal } from 'react-bootstrap';
-import { createType, fetchTypes, updateType, deleteType } from '../../http/deviceAPI';
-import { Context } from '../../index';
+import { Button, Dropdown, Form, Modal } from "react-bootstrap";
+import { createType, fetchTypes, updateType, deleteType } from "../../http/deviceAPI";
+import { Context } from "../../index";
 import styles from '../../styles/components/modals/ModalType.module.css';
 
 const ModalType = ({ show, onHide }) => {
@@ -10,14 +10,16 @@ const ModalType = ({ show, onHide }) => {
     const [selectedType, setSelectedType] = useState(null);
 
     useEffect(() => {
-        if (show) fetchTypes().then(data => device.setTypes(data));
-    }, [show, device]);
+        if (show) {
+            fetchTypes().then(data => device.setTypes(data));
+            setName('');
+            setSelectedType(null);
+        }
+    }, [device, show]);
 
     const addType = () => {
         if (!name.trim()) return;
         createType({ name }).then(() => {
-            setName('');
-            setSelectedType(null);
             onHide();
         });
     };
@@ -25,64 +27,65 @@ const ModalType = ({ show, onHide }) => {
     const handleUpdate = () => {
         if (!selectedType || !name.trim()) return;
         updateType(selectedType.id, name).then(() => {
-            setName('');
-            setSelectedType(null);
             onHide();
         });
     };
 
     const handleDelete = () => {
         if (!selectedType) return;
-        const ok = window.confirm(
-            `Удалить тип «${selectedType.name}»?\n` +
-            'Все устройства этого типа останутся без категории.'
-        );
-        if (!ok) return;
-
+        const confirmDelete = window.confirm(`Вы действительно хотите удалить тип "${selectedType.name}"? Это действие нельзя будет отменить.`);
+        if (!confirmDelete) return;
         deleteType(selectedType.id).then(() => {
-            setName('');
-            setSelectedType(null);
             onHide();
         });
     };
 
-    const chooseType = (type) => {
+    const handleSelect = (type) => {
         setSelectedType(type);
         setName(type.name);
     };
 
     return (
-        <Modal show={show} onHide={onHide} centered>
-            <Modal.Header closeButton>
-                <Modal.Title>Управление типами</Modal.Title>
+        <Modal
+            show={show}
+            onHide={onHide}
+            centered
+            className={styles.modal}
+            backdropClassName={styles.backdrop}
+        >
+            <Modal.Header closeButton className={styles.modalHeader}>
+                <Modal.Title className={styles.modalTitle}>Управление типами</Modal.Title>
             </Modal.Header>
-
-            <Modal.Body>
+            <Modal.Body className={styles.modalBody}>
                 <Dropdown className={styles.dropdown}>
-                    <Dropdown.Toggle>
-                        {selectedType ? selectedType.name : 'Выбрать тип'}
+                    <Dropdown.Toggle variant="outline-primary" className={styles.dropdownToggle}>
+                        {selectedType ? selectedType.name : "Выбрать тип"}
                     </Dropdown.Toggle>
-                    <Dropdown.Menu>
-                        {device.types.map(t =>
-                            <Dropdown.Item key={t.id} onClick={() => chooseType(t)}>
-                                {t.name}
+                    <Dropdown.Menu className={styles.dropdownMenu}>
+                        {device.types.map(type =>
+                            <Dropdown.Item
+                                key={type.id}
+                                onClick={() => handleSelect(type)}
+                                active={selectedType && selectedType.id === type.id}
+                                className={styles.dropdownItem}
+                            >
+                                {type.name}
                             </Dropdown.Item>
                         )}
                     </Dropdown.Menu>
                 </Dropdown>
-
                 <Form.Control
+                    className={styles.formInput}
+                    placeholder="Введите имя типа"
                     value={name}
                     onChange={e => setName(e.target.value)}
-                    placeholder="Введите название типа"
                 />
             </Modal.Body>
-
-            <Modal.Footer>
-                <Button variant="outline-success" onClick={addType}>Добавить</Button>
-                <Button variant="outline-primary" onClick={handleUpdate} disabled={!selectedType}>Изменить</Button>
-                <Button variant="outline-danger"  onClick={handleDelete} disabled={!selectedType}>Удалить</Button>
-                <Button variant="outline-secondary" onClick={onHide}>Закрыть</Button>
+            <Modal.Footer className={styles.modalFooter}>
+                <Button variant="success" onClick={addType} className={styles.button}>Добавить</Button>
+                <Button variant="primary" onClick={handleUpdate} disabled={!selectedType} className={styles.button}>Изменить</Button>
+                <Button variant="danger" onClick={handleDelete} disabled={!selectedType} className={styles.button}>Удалить</Button>
+                <Button variant="secondary" onClick={onHide} className={styles.button}>Закрыть</Button>
             </Modal.Footer>
         </Modal>
     );

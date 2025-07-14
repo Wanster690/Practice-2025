@@ -1,30 +1,31 @@
-import React, { useContext } from "react";
-import { observer } from "mobx-react-lite";
-import { Context } from "../index";
-import { Row, Card } from "react-bootstrap";
-import styles from "../styles/components/BrandBar.module.css";
+import React, { useContext } from 'react';
+import { observer } from 'mobx-react-lite';
+import { Context } from '../index';
+import styles from '../styles/components/BrandBar.module.css';
 
 const BrandBar = observer(() => {
     const { device } = useContext(Context);
 
     return (
-        <Row className="d-flex flex-wrap">
-            <Card
-                className={`${styles.card} ${!device.selectedBrand.id ? styles.active : ""}`}
-                onClick={() => device.setSelectedBrand({})}
+        <div className={styles.brandBarContainer}>
+            <div
+                className={`${styles.brandItem} ${!device.selectedBrand ? styles.brandItemActive : ''}`}
+                onClick={() => device.setSelectedBrand(null)}
             >
                 Все бренды
-            </Card>
-            {device.brands.map((brand) => (
-                <Card
+            </div>
+
+            {device.filteredBrands.map(brand => (
+                <div
                     key={brand.id}
-                    className={`${styles.card} ${device.selectedBrand.id === brand.id ? styles.active : ""}`}
+                    className={`${styles.brandItem} ${device.selectedBrand?.id === brand.id ? styles.brandItemActive : ''}`}
                     onClick={() => device.setSelectedBrand(brand)}
                 >
+                    {brand.logo && <img src={process.env.REACT_APP_API_URL + brand.logo} alt={brand.name} className={styles.brandLogo} />}
                     {brand.name}
-                </Card>
+                </div>
             ))}
-        </Row>
+        </div>
     );
 });
 

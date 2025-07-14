@@ -1,12 +1,60 @@
-.card {
-    cursor: pointer;
-    padding: 5px;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    border: 1px solid lightgray;
+.brandBarContainer {
+    display: flex;
+    overflow-x: auto;
+    padding: 0 10px;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
 }
 
-.active {
-    background-color: #0d6efd;
+.brandBarContainer::-webkit-scrollbar {
+    display: none;
+}
+
+.brandItem {
+    flex: 0 0 auto;
+    margin-right: 10px;
+    padding: 6px 14px;
+    border-radius: 20px;
+    background-color: #f5f5f5;
+    color: #555;
+    font-weight: 500;
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    font-size: 14px;
+}
+
+.brandItem:hover {
+    background-color: #007bff;
     color: white;
+    transform: scale(1.05);
+}
+
+.brandItemActive {
+    background-color: #0056b3;
+    color: white;
+    font-weight: 600;
+    box-shadow: 0 2px 8px rgb(0 123 255 / 0.5);
+    transform: scale(1.08);
+    position: relative;
+}
+
+.brandItemActive:hover {
+    transform: scale(1.12);
+}
+
+.brandLogo {
+    width: 20px;
+    height: 20px;
+    margin-right: 6px;
+    object-fit: contain;
+    filter: grayscale(0.6);
+    transition: filter 0.3s ease;
+}
+
+.brandItemActive .brandLogo {
+    filter: none;
 }

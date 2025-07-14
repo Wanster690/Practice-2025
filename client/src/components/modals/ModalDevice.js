@@ -94,7 +94,7 @@ const ModalDevice = observer(({ show, onHide, editingDevice }) => {
                 <Form>
                     <Dropdown className={styles.mt2}>
                         <Dropdown.Toggle>
-                            {device.selectedType.name || "Выберите тип"}
+                            {device.selectedType?.name || "Выберите тип"}
                         </Dropdown.Toggle>
                         <Dropdown.Menu>
                             {device.types.map(type =>
@@ -109,7 +109,7 @@ const ModalDevice = observer(({ show, onHide, editingDevice }) => {
                     </Dropdown>
                     <Dropdown className={styles.mt2}>
                         <Dropdown.Toggle>
-                            {device.selectedBrand.name || "Выберите бренд"}
+                            {device.selectedBrand?.name || "Выберите бренд"}
                         </Dropdown.Toggle>
                         <Dropdown.Menu>
                             {device.brands.map(brand =>

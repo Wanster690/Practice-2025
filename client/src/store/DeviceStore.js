@@ -1,65 +1,71 @@
-import {makeAutoObservable} from "mobx";
+import { makeAutoObservable } from "mobx";
 
-export default class DeviceStore{
+class DeviceStore {
+    types = [];
+    brands = [];
+    devices = [];
+    totalCount = 0;
+    page = 1;
+    limit = 12;
+
+    selectedType = null;
+    selectedBrand = null;
+
     constructor() {
-        this._types = []
-        this._brands = []
-        this._devices = []
-        this._selectedType = {}
-        this._selectedBrand = {}
-        this._page = 1
-        this._totalCount = 0
-        this._limit = 3
-        makeAutoObservable(this)
-
+        makeAutoObservable(this);
     }
 
-    setTypes(types){
-        this._types = types
-    }
-    setBrands(brands){
-        this._brands = brands
-    }
-    setDevices(devices){
-        this._devices = devices
-    }
-    setSelectedType(type){
-        this.setPage(1)
-        this._selectedType = type
-    }
-    setSelectedBrand(brand){
-        this.setPage(1)
-        this._selectedBrand = brand
-    }
-    setPage(page){
-        this._page = page
-    }
-    setTotalCount(count){
-        this._totalCount = count
+    setTypes(types) {
+        this.types = types;
     }
 
-    get types(){
-        return this._types
+    setBrands(brands) {
+        this.brands = brands;
     }
-    get brands(){
-        return this._brands
+
+    setDevices(devices) {
+        this.devices = devices;
     }
-    get devices(){
-        return this._devices
+
+    setTotalCount(count) {
+        this.totalCount = count;
     }
-    get selectedType(){
-        return this._selectedType
+
+    setPage(page) {
+        this.page = page;
     }
-    get selectedBrand(){
-        return this._selectedBrand
+
+    setSelectedType(type) {
+        this.selectedType = type;
     }
-    get totalCount(){
-        return this._totalCount
+
+    setSelectedBrand(brand) {
+        this.selectedBrand = brand;
     }
-    get page(){
-        return this._page
+
+    get filteredTypes() {
+        if (!this.selectedBrand) return this.types;
+        const brandId = this.selectedBrand.id;
+        const typesWithBrand = new Set(
+            this.devices
+                .filter(device => device.brandId === brandId)
+                .map(device => device.typeId)
+        );
+        return this.types.filter(type => typesWithBrand.has(type.id));
     }
-    get limit(){
-        return this._limit
+
+    get filteredBrands() {
+        if (!this.selectedType) return this.brands;
+        const typeId = this.selectedType.id;
+        const brandsWithType = new Set(
+            this.devices
+                .filter(device => device.typeId === typeId)
+                .map(device => device.brandId)
+        );
+        return this.brands.filter(brand => brandsWithType.has(brand.id));
     }
 }
+
+const deviceStore = new DeviceStore();
+
+export default deviceStore;

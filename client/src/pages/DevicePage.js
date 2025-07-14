@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Button, Card, Col, Container, Image, Row } from 'react-bootstrap';
-import {useNavigate, useParams} from 'react-router-dom';
-import {deleteDevice, fetchOneDevice} from '../http/deviceAPI';
+import { useNavigate, useParams } from 'react-router-dom';
+import { deleteDevice, fetchOneDevice } from '../http/deviceAPI';
 import bigStar from '../assets/bigStar.png';
 import styles from '../styles/pages/DevicePage.module.css';
 import ModalDevice from "../components/modals/ModalDevice";
@@ -10,7 +10,7 @@ const DevicePage = () => {
     const [device, setDevice] = useState({ info: [] });
     const [editVisible, setEditVisible] = useState(false);
     const { id } = useParams();
-    const navigate = useNavigate()
+    const navigate = useNavigate();
 
     useEffect(() => {
         fetchOneDevice(id).then(data => setDevice(data));
@@ -25,58 +25,57 @@ const DevicePage = () => {
 
     return (
         <Container className={styles.container}>
-            <Row>
-                <Col md={4}>
+            <Row className={styles.topRow}>
+                <Col md={5} className={styles.imageWrapper}>
                     <Image
-                        className={styles.image}
                         src={process.env.REACT_APP_API_URL + device.img}
                         alt={device.name}
+                        className={styles.image}
                         fluid
                     />
                 </Col>
-                <Col md={4}>
-                    <Row className="d-flex flex-column align-items-center">
-                        <h2>{device.name}</h2>
-                        <div
-                            className={styles.ratingWrapper}
-                            style={{ backgroundImage: `url(${bigStar})` }}
-                        >
-                            {device.rating}
-                        </div>
-                    </Row>
-                </Col>
-                <Col md={4}>
-                    <Card className={styles.cardPrice}>
-                        <h3>От: {device.price} руб.</h3>
-                        <Button variant="outline-dark" className="mt-2">
-                            Добавить в корзину
-                        </Button>
-                        <div className={styles.buttonGroup}>
-                            <Button
-                                variant="outline-primary"
-                                onClick={() => setEditVisible(true)}
-                            >Редактировать</Button>
 
+                <Col md={7} className={styles.infoWrapper}>
+                    <h1 className={styles.deviceName}>{device.name}</h1>
+
+                    <div className={styles.ratingContainer}>
+                        <img src={bigStar} alt="star" className={styles.starIcon} />
+                        <span className={styles.rating}>{device.rating}</span>
+                    </div>
+
+                    <Card className={styles.priceCard}>
+                        <div className={styles.priceText}>Цена от</div>
+                        <div className={styles.priceValue}>{device.price} ₽</div>
+
+                        <Button variant="primary" className={styles.buyButton}>
+                            В корзину
+                        </Button>
+
+                        <div className={styles.actionButtons}>
+                            <Button variant="outline-secondary" onClick={() => setEditVisible(true)}>
+                                Редактировать
+                            </Button>
                             <Button variant="outline-danger" onClick={handleDelete}>
                                 Удалить
                             </Button>
                         </div>
-
                     </Card>
                 </Col>
             </Row>
 
-            <Row className={styles.specsRow}>
-                <h1>Характеристики</h1>
+            <Row className={styles.specsSection}>
+                <h2>Характеристики</h2>
                 {device.info.map((info, index) => (
                     <Row
                         key={info.id}
-                        className={`${styles.specRow} ${index % 2 === 0 ? styles.specRowEven : ''}`}
+                        className={`${styles.specRow} ${index % 2 === 0 ? styles.specEven : styles.specOdd}`}
                     >
-                        {info.title} : {info.description}
+                        <div className={styles.specTitle}>{info.title}</div>
+                        <div className={styles.specDescription}>{info.description}</div>
                     </Row>
                 ))}
             </Row>
+
             <ModalDevice
                 show={editVisible}
                 onHide={() => setEditVisible(false)}

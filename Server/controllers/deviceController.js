@@ -17,8 +17,21 @@ class deviceController{
             limit,
             offset
         })
-
         return res.json(devices)
+    }
+    async getBrandsByType(req, res) {
+        const { typeId } = req.params;
+        const devices = await Device.findAll({ where: { typeId } });
+        const brandIds = [...new Set(devices.map(device => device.brandId))];
+        const brands = await Brand.findAll({ where: { id: brandIds } });
+        return res.json(brands);
+    }
+    async getTypesByBrand(req, res) {
+        const { brandId } = req.params;
+        const devices = await Device.findAll({ where: { brandId } });
+        const typeIds = [...new Set(devices.map(device => device.typeId))];
+        const types = await Type.findAll({ where: { id: typeIds } });
+        return res.json(types);
     }
     async create(req, res, next){
         try {

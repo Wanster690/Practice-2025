@@ -1,50 +1,121 @@
 .container {
     margin-top: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
 }
 
-.image {
-    width: 300px;
-    height: 300px;
-    object-fit: contain;
-}
-
-.ratingWrapper {
-    width: 240px;
-    height: 240px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    font-size: 64px;
-    display: flex;
+.topRow {
+    margin-bottom: 3rem;
     align-items: center;
+}
+
+.imageWrapper {
+    display: flex;
     justify-content: center;
 }
 
-.cardPrice {
+.image {
+    max-width: 100%;
+    max-height: 320px;
+    border-radius: 16px;
+    box-shadow: 0 6px 15px rgb(0 0 0 / 0.1);
+    object-fit: contain;
+}
+
+.infoWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.deviceName {
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-bottom: 0.3rem;
+    text-align: left;
+}
+
+.ratingContainer {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    background: #ffdd57;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    width: fit-content;
+    box-shadow: 0 3px 6px rgb(255 221 87 / 0.5);
+}
+
+.starIcon {
+    width: 28px;
+    height: 28px;
+}
+
+.rating {
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: #444;
+}
+
+.priceCard {
+    padding: 1.5rem 2rem;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgb(0 0 0 / 0.08);
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 32px;
-    padding: 20px;
-    border: 1px solid lightgray;
+    gap: 1rem;
+    background: #fff;
+    min-width: 280px;
 }
 
-.specsRow {
-    margin-top: 40px;
-    font-size: 16px;
+.priceText {
+    font-size: 1rem;
+    color: #888;
+}
+
+.priceValue {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1a73e8;
+}
+
+.buyButton {
+    width: 100%;
+    font-weight: 600;
+    font-size: 1.1rem;
+    border-radius: 8px;
+}
+
+.actionButtons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.actionButtons button {
+    flex: 1;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+.specsSection {
+    font-size: 1rem;
+    color: #444;
 }
 
 .specRow {
-    padding: 10px;
-    background-color: #f9f9f9;
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin-bottom: 0.6rem;
 }
 
-.specRowEven {
-    background-color: #eaeaea;
-}
-.buttonGroup {
-    display: flex;
-    gap: 1rem;
-    margin-top: 1rem;
+.specEven {
+    background-color: #f5f8ff;
 }
 
+.specOdd {
+    background-color: #e9f0ff;
+}

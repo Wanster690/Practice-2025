@@ -3,9 +3,27 @@
 }
 
 .sidebar {
-
+    background-color: #fefefe;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 0.05);
+    height: 100vh;
+    position: sticky;
+    top: 20px;
+    border-right: 1.5px solid #e0e0e0;
 }
 
 .content {
+    padding-left: 30px;
+    background-color: #fff;
+}
+
+.brandBarWrapper {
+    border-bottom: 1.5px solid #e0e0e0;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+}
+
+.deviceListWrapper {
 
 }

@@ -45,6 +45,16 @@ export const fetchOneDevice = async (id) => {
     const {data} = await $host.get('api/device/' + id)
     return data
 }
+
+export const fetchBrandsByType = async (typeId) => {
+    const { data } = await $host.get(`/api/device/${typeId}`);
+    return data;
+};
+
+export const fetchTypesByBrand = async (brandId) => {
+    const { data } = await $host.get(`/api/device/${brandId}`);
+    return data;
+};
 export const updateDevice = async (id, device) => {
     const {data} = await $autHost.put(`api/device/${id}`, device)
     return data

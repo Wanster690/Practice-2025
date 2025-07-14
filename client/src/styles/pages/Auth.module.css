@@ -1,26 +1,121 @@
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    box-sizing: border-box;
+}
+
 .container {
-    height: calc(100vh - 54px);
+    height: 100%;
+    width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    padding-top: 80px;
+    box-sizing: border-box;
 }
 
 .card {
     width: 600px;
-    padding: 2rem 2rem 2rem 2rem;
+    padding: 2rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    background: white;
 }
 
+
+/* Заголовок */
 .title {
-    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #222;
 }
 
+/* Форма: вертикальный стек с промежутками */
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+/* Поля ввода */
 .formControl {
-    margin-top: 1rem;
+    padding: 0.85rem 1rem;
+    border: 1.5px solid #ccc;
+    border-radius: 10px;
+    font-size: 1.05rem;
+    color: #222;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fafafa;
 }
 
+/* Подсветка placeholder */
+.formControl::placeholder {
+    color: #999;
+    opacity: 1; /* чтобы была видна на всех браузерах */
+    font-style: italic;
+}
+
+/* При фокусе */
+.formControl:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.4);
+    outline: none;
+    background-color: #fff;
+    color: #111;
+}
+
+/* Контейнер для ссылок и кнопки */
 .row {
     display: flex;
     justify-content: space-between;
-    margin-top: 1rem;
-    padding: 0 1rem;
+    align-items: center;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+/* Текст ссылок */
+.linkText {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Ссылки */
+.linkText a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 4px;
+}
+
+.linkText a:hover {
+    text-decoration: underline;
+}
+
+/* Кнопка */
+.authButton {
+    padding: 0.65rem 1.8rem;
+    background-color: #007bff;
+    border: none;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 1.05rem;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.15s ease;
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.5);
+}
+
+.authButton:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.authButton:active {
+    transform: scale(0.95);
 }

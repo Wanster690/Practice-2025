@@ -1,33 +1,30 @@
-.modal {
+.modalContent {
     border-radius: 12px;
-    overflow: hidden;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #2c3e50;
-}
-
-.backdrop {
-    background-color: rgba(0, 0, 0, 0.35);
-    backdrop-filter: blur(4px);
+    background-color: #fff;
+    padding: 1.5rem 2rem;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
 }
 
 .modalHeader {
-    background: #007bff;
+    background-color: #007bff;
     color: white;
     border-bottom: none;
-    padding: 1rem 1.5rem;
-}
-
-.modalTitle {
+    padding: 1rem 2rem;
+    border-radius: 12px 12px 0 0;
     font-weight: 700;
-    font-size: 1.4rem;
-    margin: 0;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .modalBody {
-    padding: 1.5rem 1.75rem;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 1.25rem;
+    padding: 1rem 2rem;
 }
 
 .dropdown {
@@ -41,7 +38,7 @@
     color: #007bff;
     font-weight: 600;
     border-radius: 8px;
-    padding: 0.5rem 1rem;
+    padding: 0.6rem 1.2rem;
     text-align: left;
     box-shadow: none;
     transition: background-color 0.3s ease;
@@ -76,7 +73,7 @@
 .formInput {
     border-radius: 8px;
     border: 1.5px solid #ced4da;
-    padding: 0.5rem 1rem;
+    padding: 0.6rem 1rem;
     font-size: 1rem;
     transition: border-color 0.3s ease;
 }
@@ -84,26 +81,53 @@
 .formInput:focus {
     outline: none;
     border-color: #007bff;
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    box-shadow: 0 0 6px rgba(0, 123, 255, 0.5);
 }
 
-.modalFooter {
-    padding: 1rem 1.5rem;
-    background: #f7f9fc;
-    display: flex;
-    justify-content: flex-end;
-    gap: 0.75rem;
+.infoRow {
+    margin-top: 1rem;
+    gap: 1rem;
 }
 
-.button {
-    border-radius: 8px;
+.btnOutlineDark {
+    background-color: transparent;
+    border: 2px solid #2c3e50;
+    color: #2c3e50;
     font-weight: 600;
-    padding: 0.5rem 1.2rem;
-    box-shadow: none;
-    transition: box-shadow 0.2s ease, transform 0.2s ease;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.button:hover {
-    box-shadow: 0 4px 12px rgb(0 123 255 / 0.4);
-    transform: translateY(-2px);
+.btnOutlineDark:hover {
+    background-color: #2c3e50;
+    color: white;
+}
+
+.btnOutlineDanger {
+    border-radius: 8px;
+    border: 2px solid #dc3545;
+    color: #dc3545;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btnOutlineDanger:hover {
+    background-color: #dc3545;
+    color: white;
+}
+
+.btnOutlineSuccess {
+    border-radius: 8px;
+    border: 2px solid #28a745;
+    color: #28a745;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btnOutlineSuccess:hover {
+    background-color: #28a745;
+    color: white;
 }

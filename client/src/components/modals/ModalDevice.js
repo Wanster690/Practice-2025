@@ -84,73 +84,90 @@ const ModalDevice = observer(({ show, onHide, editingDevice }) => {
     };
 
     return (
-        <Modal show={show} onHide={() => { onHide(); resetForm(); }} centered>
-            <Modal.Header closeButton>
+        <Modal
+            show={show}
+            onHide={() => { onHide(); resetForm(); }}
+            centered
+            dialogClassName={styles.modalContent}
+            backdropClassName={styles.backdrop}
+        >
+            <Modal.Header closeButton className={styles.modalHeader}>
                 <Modal.Title>
                     {editingDevice ? "Редактировать устройство" : "Добавить устройство"}
                 </Modal.Title>
             </Modal.Header>
-            <Modal.Body>
+            <Modal.Body className={styles.modalBody}>
                 <Form>
-                    <Dropdown className={styles.mt2}>
-                        <Dropdown.Toggle>
+                    <Dropdown className={styles.dropdown}>
+                        <Dropdown.Toggle className={styles.dropdownToggle}>
                             {device.selectedType?.name || "Выберите тип"}
                         </Dropdown.Toggle>
-                        <Dropdown.Menu>
+                        <Dropdown.Menu className={styles.dropdownMenu}>
                             {device.types.map(type =>
                                 <Dropdown.Item
                                     onClick={() => device.setSelectedType(type)}
                                     key={type.id}
+                                    className={styles.dropdownItem}
                                 >
                                     {type.name}
                                 </Dropdown.Item>
                             )}
                         </Dropdown.Menu>
                     </Dropdown>
-                    <Dropdown className={styles.mt2}>
-                        <Dropdown.Toggle>
+                    <Dropdown className={styles.dropdown} style={{ marginTop: '1rem' }}>
+                        <Dropdown.Toggle className={styles.dropdownToggle}>
                             {device.selectedBrand?.name || "Выберите бренд"}
                         </Dropdown.Toggle>
-                        <Dropdown.Menu>
+                        <Dropdown.Menu className={styles.dropdownMenu}>
                             {device.brands.map(brand =>
                                 <Dropdown.Item
                                     onClick={() => device.setSelectedBrand(brand)}
                                     key={brand.id}
+                                    className={styles.dropdownItem}
                                 >
                                     {brand.name}
                                 </Dropdown.Item>
                             )}
                         </Dropdown.Menu>
                     </Dropdown>
+
                     <Form.Control
                         value={name}
                         onChange={e => setName(e.target.value)}
-                        className={styles.mt3}
+                        className={styles.formInput}
                         placeholder="Введите название устройства"
+                        style={{ marginTop: '1rem' }}
                     />
                     <Form.Control
                         value={price}
                         onChange={e => setPrice(Number(e.target.value))}
-                        className={styles.mt3}
+                        className={styles.formInput}
                         placeholder="Введите стоимость устройства"
                         type="number"
+                        style={{ marginTop: '1rem' }}
                     />
                     <Form.Control
-                        className={styles.mt3}
+                        className={styles.formInput}
                         type="file"
                         onChange={selectedFile}
+                        style={{ marginTop: '1rem' }}
                     />
-                    <hr />
-                    <Button variant="outline-dark" onClick={addInfo} className={styles.btnOutlineDark}>
+                    <hr style={{ margin: '1rem 0' }} />
+                    <Button
+                        variant="outline-dark"
+                        onClick={addInfo}
+                        className={styles.btnOutlineDark}
+                    >
                         Добавить новое свойство
                     </Button>
                     {info.map(i =>
-                        <Row className={styles.mt4} key={i.number}>
+                        <Row className={styles.infoRow} key={i.number}>
                             <Col md={4}>
                                 <Form.Control
                                     value={i.title}
                                     onChange={(e) => changeInfo('title', e.target.value, i.number)}
                                     placeholder="Введите название свойства"
+                                    className={styles.formInput}
                                 />
                             </Col>
                             <Col md={4}>
@@ -158,6 +175,7 @@ const ModalDevice = observer(({ show, onHide, editingDevice }) => {
                                     value={i.description}
                                     onChange={(e) => changeInfo('description', e.target.value, i.number)}
                                     placeholder="Введите описание свойства"
+                                    className={styles.formInput}
                                 />
                             </Col>
                             <Col md={4}>
@@ -165,6 +183,7 @@ const ModalDevice = observer(({ show, onHide, editingDevice }) => {
                                     onClick={() => removeInfo(i.number)}
                                     variant="outline-danger"
                                     className={styles.btnOutlineDanger}
+                                    style={{ width: '100%' }}
                                 >
                                     Удалить
                                 </Button>
@@ -173,13 +192,24 @@ const ModalDevice = observer(({ show, onHide, editingDevice }) => {
                     )}
                 </Form>
             </Modal.Body>
-            <Modal.Footer>
-                <Button variant="outline-danger" onClick={() => { onHide(); resetForm(); }} className={styles.btnOutlineDanger}>Закрыть</Button>
-                <Button variant="outline-success" onClick={saveDevice} className={styles.btnOutlineSuccess}>
+            <Modal.Footer className={styles.modalFooter}>
+                <Button
+                    variant="outline-danger"
+                    onClick={() => { onHide(); resetForm(); }}
+                    className={styles.btnOutlineDanger}
+                >
+                    Закрыть
+                </Button>
+                <Button
+                    variant="outline-success"
+                    onClick={saveDevice}
+                    className={styles.btnOutlineSuccess}
+                >
                     {editingDevice ? "Сохранить изменения" : "Добавить"}
                 </Button>
             </Modal.Footer>
         </Modal>
+
     );
 });
 

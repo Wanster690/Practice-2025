@@ -1,0 +1,50 @@
+.container {
+    margin-top: 2rem;
+}
+
+.image {
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+}
+
+.ratingWrapper {
+    width: 240px;
+    height: 240px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-size: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardPrice {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 32px;
+    padding: 20px;
+    border: 1px solid lightgray;
+}
+
+.specsRow {
+    margin-top: 40px;
+    font-size: 16px;
+}
+
+.specRow {
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+.specRowEven {
+    background-color: #eaeaea;
+}
+.buttonGroup {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+

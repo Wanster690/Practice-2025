@@ -1,0 +1,26 @@
+.container {
+    height: calc(100vh - 54px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 600px;
+    padding: 2rem 2rem 2rem 2rem;
+}
+
+.title {
+    margin: 0 auto;
+}
+
+.formControl {
+    margin-top: 1rem;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    padding: 0 1rem;
+}

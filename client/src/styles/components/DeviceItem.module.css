@@ -1,0 +1,22 @@
+.deviceCol {
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.card {
+    width: 150px;
+    border-color: lightgray;
+}
+
+.ratingBlock {
+    color: #6c757d;
+    margin-top: 0.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ratingInner {
+    display: flex;
+    align-items: center;
+}

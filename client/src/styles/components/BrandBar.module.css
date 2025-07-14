@@ -1,0 +1,12 @@
+.card {
+    cursor: pointer;
+    padding: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border: 1px solid lightgray;
+}
+
+.active {
+    background-color: #0d6efd;
+    color: white;
+}

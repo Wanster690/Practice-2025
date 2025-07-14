@@ -4,8 +4,54 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="561e1ac1-677e-4985-bdf9-9314cb8823a1" name="Changes" comment="Basic backend is Done,&#10;starting frontend">
+    <list default="true" id="561e1ac1-677e-4985-bdf9-9314cb8823a1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/client/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/BrandBar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/DeviceItem.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/DeviceList.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/NavBar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/Pages.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/TypeBar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/modals/ModalBrand.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/modals/ModalDevice.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/modals/ModalType.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/http/deviceAPI.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/http/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/http/userAPI.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/styles/App.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/styles/components/BrandBar.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/styles/components/DeviceItem.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/styles/components/DeviceList.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/styles/components/NavBar.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/styles/components/Pages.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/styles/components/TypeBar.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/styles/components/modals/ModalBrand.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/styles/components/modals/ModalDevice.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/styles/components/modals/ModalType.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/styles/pages/Admin.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/styles/pages/Auth.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/styles/pages/DevicePage.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/styles/pages/Shop.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/controllers/brandController.js" beforeDir="false" afterPath="$PROJECT_DIR$/Server/controllers/brandController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/controllers/deviceController.js" beforeDir="false" afterPath="$PROJECT_DIR$/Server/controllers/deviceController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/controllers/typeController.js" beforeDir="false" afterPath="$PROJECT_DIR$/Server/controllers/typeController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/controllers/userController.js" beforeDir="false" afterPath="$PROJECT_DIR$/Server/controllers/userController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/Server/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/routes/brandRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/Server/routes/brandRouter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/routes/deviceRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/Server/routes/deviceRouter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/routes/typeRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/Server/routes/typeRouter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/AppRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/AppRouter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Admin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/DevicePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/DevicePage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Shop.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Shop.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/store/DeviceStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/store/DeviceStore.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +89,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;Node.js.index.js.executor&quot;: &quot;Run&quot;,
     &quot;Node.js.models.js.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
@@ -60,8 +107,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Study\3K\3.2\Practice\Project\Server" />
-      <recent name="D:\Study\3K\3.2\Practice\Project" />
+      <recent name="D:\Study\3K\3.2\Practice\Project\client\src\styles\components" />
+      <recent name="D:\Study\3K\3.2\Practice\Project\client\src\styles\components\modals" />
+      <recent name="D:\Study\3K\3.2\Practice\Project\client\src\styles\pages" />
+      <recent name="D:\Study\3K\3.2\Practice\Project\client" />
+      <recent name="D:\Study\3K\3.2\Practice\Project\client\src" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -83,7 +133,16 @@
       <workItem from="1751815731737" duration="599000" />
       <workItem from="1751816342812" duration="4047000" />
       <workItem from="1751836792418" duration="854000" />
-      <workItem from="1751837659297" duration="10493000" />
+      <workItem from="1751837659297" duration="10911000" />
+      <workItem from="1751969538974" duration="19175000" />
+      <workItem from="1752009163579" duration="2982000" />
+      <workItem from="1752063788704" duration="418000" />
+      <workItem from="1752064220333" duration="8395000" />
+      <workItem from="1752317179708" duration="21000" />
+      <workItem from="1752317245872" duration="6467000" />
+      <workItem from="1752415414642" duration="3798000" />
+      <workItem from="1752486316983" duration="13169000" />
+      <workItem from="1752501678150" duration="3478000" />
     </task>
     <task id="LOCAL-00001" summary="Basic backend is Done,&#10;starting frontend">
       <option name="closed" value="true" />
